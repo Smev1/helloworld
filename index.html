@@ -1,16 +1,35 @@
 <html>
 <head>
-<div style="width:640px;height:480px;max-width:100%">
-  <div id="game"></div>
+<div style='width:640px;height:480px;max-width:100%'>
+    <div id='game'></div>
 </div>
-<script type="text/javascript">
-    EJS_player = '#game';
-    EJS_biosUrl = ''; // Url to Famicom Disk System bios
-    EJS_gameUrl = 'https://www.mediafire.com/file/vhhp3ii6w0vo92f/Super_Mario_Bros_%2528E%2529.nes/file'; // Url to Game rom
-    EJS_core = 'nes'; // Optional core: mesen, nestopia
-    EJS_lightgun = false; // Lightgun
-</script>
-<script src="https://www.emulatorjs.com/loader.js"></script>
 
+<script type='text/javascript'>
+
+    EJS_player = '#game';
+    EJS_core = 'nes';
+    
+    // Lightgun
+    
+    EJS_lightgun = false;
+
+    // URL to Famicom Disk System bios
+
+    EJS_biosUrl = '';
+    
+    // URL to Game rom
+     
+    EJS_gameUrl = 'https://www.mediafire.com/file/vhhp3ii6w0vo92f/Super_Mario_Bros_%2528E%2529.nes/file';
+    
+    /*
+     *  Path to the WASM / JS files
+     *  HAS TO BE in the same directory.
+     */
+    
+    EJS_pathtodata = 'data/';
+    
+</script>
+
+<script src='data/loader.js'></script>
     </head>
   </html>
